@@ -1,0 +1,87 @@
+/* src/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS for Animation */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0; /* Start hidden */
+  }
+  
+  /* Custom Animation for Cloud Icon */
+@keyframes moveCloud {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-moveCloud {
+  animation: moveCloud 20s infinite linear;
+}
+
+@keyframes moveCloud2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(80px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-moveCloud2 {
+  animation: moveCloud 30s infinite linear;
+}
+
+@keyframes moveCloud3 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-moveCloud3 {
+  animation: moveCloud 40s infinite linear;
+}
+
+/* Add this in your global CSS file or a relevant CSS module */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  opacity: 1;
+  animation: fadeIn 1s ease-out forwards;
+}
